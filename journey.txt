@@ -1,0 +1,34 @@
+First I am working on Backend
+creating models -done creating models
+Now Setting up my mongodb and connecting to my code
+
+
+
+
+
+FRONTEND PART
+
+
+pages
+
+Landing/Home Page - Hero section with mission statement, featured campaigns, success stories, and quick donation entry points.
+
+Registration/Login Pages - Separate flows for donors, recipients, and administrators with role-based authentication.
+
+Donor Dashboard - Overview of donation history, upcoming pickups, impact metrics, and quick donation options.
+
+Recipient Dashboard - Available food listings, request history, pickup scheduling, and location management.
+
+Admin Dashboard - System analytics, user management, donation oversight, and reporting tools.
+
+
+aage ka steps
+
+
+change claimed donation into pending donations for that start from frontend change api
+route then axios request then in backend route then controller then service then model
+isse status pending mai rahega aur sabse imp donater ke pass request jaegi 30min ke timer ke saath 
+agar accept to claimed aur reject to available
+
+
+PHIR chat section phir styling aur detailing aur phir the end  

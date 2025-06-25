@@ -1,0 +1,138 @@
+.navbar {
+  background-color: #3CC78F; /* Dark green */
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.navbar-logo span {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover span {
+  transform: scale(1.05);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  color: #e8f5e9; /* Light green */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover:before {
+  width: 100%;
+}
+
+.nav-link:hover {
+  background-color: #388e3c; /* Slightly lighter green */
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Mobile menu button (hidden by default) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+  
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+  
+  .navbar-links {
+    display: none; /* Hide by default on mobile */
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .navbar-links.active {
+    display: flex; /* Show when active class is added */
+    animation: slideDown 0.3s ease forwards;
+  }
+  
+  .nav-link {
+    padding: 0.75rem;
+    text-align: center;
+  }
+}
+
+/* For tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .navbar-links {
+    gap: 1rem;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1025px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Animation keyframes */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
