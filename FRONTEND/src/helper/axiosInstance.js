@@ -6,6 +6,3 @@ export const axiosInstance = axios.create({
   timeout: 10000,
 });
 
-axios.create({
-  baseURL: "https://food-donation-system-w44b.onrender.com",
-});
