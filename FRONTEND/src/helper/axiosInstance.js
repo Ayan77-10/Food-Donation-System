@@ -5,3 +5,7 @@ export const axiosInstance = axios.create({
   withCredentials: true,
   timeout: 10000,
 });
+
+axios.create({
+  baseURL: process.env.REACT_APP_API_BASE_URL,
+});
