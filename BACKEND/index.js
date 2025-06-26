@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use(cookieParser());
-app.use(cors({ origin: "https://food-donation-system-w44b.onrender.com", credentials: true }));
+app.use(cors({ origin: "*", credentials: true }));
 
 
 
