@@ -25,7 +25,7 @@ app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use("/api/auth", auth);
 app.use("/api/", donation);
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   connectDB();
   console.log("Server running on 5000");
 });

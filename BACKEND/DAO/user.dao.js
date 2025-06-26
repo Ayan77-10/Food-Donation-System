@@ -12,7 +12,7 @@ export const createUser = async (name, email, password) => {
     name,
     email,
     password,
-    role: "ngo", // default from code
+    role: "donor", // default from code
     location: {
       type: "Point",
       coordinates: [77.5946, 12.9716], // Bangalore default
