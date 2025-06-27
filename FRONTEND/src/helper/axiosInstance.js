@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://food-donation-system-j7uo.onrender.com/api/",
+  baseURL: "https://food-donation-system-6k8i.onrender.com/api/",
   withCredentials: true,
   timeout: 10000,
 });
