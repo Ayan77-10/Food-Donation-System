@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(cors({ origin: "https://food-donationsystem.netlify.app", credentials: true }));
 
 
-
+https://food-donationsystem.netlify.app/
 
 // auth route
 app.use("/api/auth", auth);
